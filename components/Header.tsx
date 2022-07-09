@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
 
-  useEffect(() => {
+  useEffect(() => { {/* Burada useEffect kullanarak Scroll hareket ettirildi */}
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsScrolled(true)
@@ -23,7 +23,7 @@ function Header() {
   }, [])
 
   return (
-    <header className={`${isScrolled && 'bg-[#141414]'}`}>
+    <header className={`${isScrolled && 'bg-[#000000]'}`}> {/*Scroll aşağıya kaydığında header buradaki renk oluşuyor */}
       <div className="flex items-center space-x-2 md:space-x-10">
         <img
           src="https://media-exp1.licdn.com/dms/image/C4D0BAQHWQxfc-rYnYA/company-logo_200_200/0/1654710056271?e=1665619200&v=beta&t=FiM_zyAHHVuOgVey9FR5O0uzKjU10Hk5p2OZxc8Sg9k"
@@ -45,7 +45,6 @@ function Header() {
       </div>
       <div className="flex items-center space-x-4 text-sm font-light">
         <SearchIcon className="sm hidden h-6 w-6 sm:inline" />
-        <p className="hidden lg:inline">Kids</p>
         <BellIcon className="h-6 w-6" />
         <Link href="/account">
           <img

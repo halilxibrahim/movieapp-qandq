@@ -3,11 +3,11 @@ import React from 'react'
 function Banner() {
   return (
     <div>
-        {/*<div>
+    {/*<div>
             <Image>
         </div>*/}
     </div>
-  )
+    )
 }
 
 export default Banner

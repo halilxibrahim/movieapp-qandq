@@ -23,7 +23,9 @@ const App = () => {
     "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
 },]);
 
-  return <div> Merhaba deneme</div>
+  return <div>
+    
+  </div>
 };
 
 export default App; 

@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
+import SearchBox from './components/SearchBox';
 
 
 
@@ -26,7 +27,8 @@ useEffect(() => {
 return (
   <div className='container-fluid movie-app'>
     <div className='row'>
-      <MovieListHeading heading='Movies'/> {/* Film listesinin heading buraya gelecek. */}
+      <MovieListHeading heading='Filmler'/> {/* Film listesinin heading buraya gelecek. */}
+      <SearchBox/>
     </div> 
     <div className='row'>
       <MovieList movies={movies}/>

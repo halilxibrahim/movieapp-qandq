@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddFavourities = () => {
+const AddFavouritie = () => {
     return(
         <>
             <span className='mr-2'>Favorilere ekle</span>
@@ -21,4 +21,4 @@ const AddFavourities = () => {
     );
 };
 
-export default AddFavourities;
+export default AddFavouritie;

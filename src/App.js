@@ -34,7 +34,7 @@ return (
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
     </div> 
     <div className='row'>
-      <MovieList movies={movies}/>
+      <MovieList movies={movies} favouriteComponent = {AddFavourities}/>
     </div>
   </div>
   ); 

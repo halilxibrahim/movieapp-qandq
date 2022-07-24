@@ -21,4 +21,4 @@ const AddFavouritie = () => {
     );
 };
 
-export default AddFavouritie;
+export default AddFavouritie; 

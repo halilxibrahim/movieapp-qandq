@@ -5,6 +5,7 @@ import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
 import AddFavourities from './components/AddFavourities';
+import RemoveFavourites from './components/RemoveFavourites';
 
 
 const App = () => {
@@ -28,10 +29,24 @@ useEffect(() => {
   getMovieRequest(searchValue);
 }, [searchValue]);
 
+
+
+
+
+
 const addFavouriteMovie = (movie) => {
   const newFavouriteList = [...favourites, movie];
   setFavourites(newFavouriteList);
 }
+
+const removeFavouriteMovie = (movie) => {
+  const newFavouriteList = favourites.filter(
+    (favourite) => favourite.imdbID !== movie.imdbID
+  );
+
+  setFavourites(newFavouriteList);
+};
+
 
 return (
   <div className='container-fluid movie-app'>
@@ -52,8 +67,8 @@ return (
     <div className='row'>
 				<MovieList
 					movies={favourites}
-					handleFavouritesClick={addFavouriteMovie}
-          favouriteComponent = {AddFavourities}
+					handleFavouritesClick={removeFavouriteMovie}
+          favouriteComponent = {RemoveFavourites}
 				/>
 			</div>
   </div>
